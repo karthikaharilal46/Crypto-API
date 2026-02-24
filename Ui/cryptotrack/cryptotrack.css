@@ -1,0 +1,136 @@
+:host { display: block; }
+
+.crypto-wrapper {
+  background: #0a0a0f;
+  min-height: 100vh;
+  color: #fff;
+}
+
+.crypto-hero {
+  background: linear-gradient(135deg, #0a0a0f 0%, #13131f 50%, #1a1a2e 100%);
+  padding: 3rem 0 2rem;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.hero-title {
+  font-size: 3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  background: linear-gradient(90deg, #f7931a, #f5d020);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  margin-bottom: 0.5rem;
+}
+
+.hero-subtitle {
+  color: rgba(255,255,255,0.55);
+  font-size: 1.05rem;
+  margin-bottom: 1.5rem;
+}
+
+.currency-tabs {
+  display: flex;
+  justify-content: center;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+}
+
+.tab-btn {
+  background: rgba(255,255,255,0.07);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: rgba(255,255,255,0.7);
+  padding: 0.4rem 1.1rem;
+  border-radius: 50px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.25s;
+}
+
+.tab-btn:hover { background: rgba(247,147,26,0.25); border-color: #f7931a; color: #fff; }
+.tab-btn.active { background: #f7931a; border-color: #f7931a; color: #000; font-weight: 700; }
+
+.search-box {
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  background: rgba(255,255,255,0.08);
+  border: 1px solid rgba(255,255,255,0.15);
+  color: #fff;
+  padding: 0.6rem 1.25rem;
+  border-radius: 50px;
+  font-size: 0.95rem;
+  width: 320px;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.search-input::placeholder { color: rgba(255,255,255,0.35); }
+.search-input:focus { border-color: #f7931a; }
+
+.table-wrap {
+  overflow-x: auto;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.07);
+}
+
+.crypto-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.88rem;
+}
+
+.crypto-table thead tr {
+  background: #13131f;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+}
+
+.crypto-table th {
+  padding: 0.85rem 1rem;
+  text-align: left;
+  color: rgba(255,255,255,0.45);
+  font-weight: 600;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.crypto-table tbody tr {
+  border-bottom: 1px solid rgba(255,255,255,0.04);
+  transition: background 0.2s;
+}
+
+.crypto-table tbody tr:hover { background: rgba(247,147,26,0.06); }
+
+.crypto-table td {
+  padding: 0.85rem 1rem;
+  white-space: nowrap;
+}
+
+.rank { color: rgba(255,255,255,0.35); font-size: 0.8rem; }
+
+.coin-name-cell {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  min-width: 160px;
+}
+
+.coin-icon {
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+}
+
+.coin-name { font-weight: 600; color: #fff; }
+.coin-symbol { color: rgba(255,255,255,0.4); font-size: 0.75rem; }
+
+.price { font-weight: 700; color: #fff; }
+
+.change-up { color: #00c853; font-weight: 600; }
+.change-down { color: #ff1744; font-weight: 600; }
+
+.muted { color: rgba(255,255,255,0.55); }
